@@ -4,6 +4,7 @@ function DoNothingLevel()
 	this.won=false;
 	this.remaining=60;
 }
+
 DoNothingLevel.prototype.draw = function(ctx)
 {
 	ctx.fillStyle = "F00";
