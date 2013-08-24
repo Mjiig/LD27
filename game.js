@@ -123,7 +123,7 @@ function handlemousemove(event)
 
 function newlevel()
 {
-	var levels = [DoNothingLevel, BoxesLevel, FastClickLevel,ClickLevel ];
+	var levels = [DoNothingLevel, BoxesLevel, FastClickLevel,ClickLevel, PatternLevel ];
 
 	var level = levels[rand(levels.length)];
 
