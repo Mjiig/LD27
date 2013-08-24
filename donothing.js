@@ -15,23 +15,17 @@ DoNothingLevel.prototype.draw = function(ctx)
 
 DoNothingLevel.prototype.click = function(x, y)
 {
-	if(this.remaing<60)
-	{
-		this.finished=true;
-	}
+	this.remaining=60;
 }
 
 DoNothingLevel.prototype.keyboard = function(keycode)
 {
-	this.finished=true;
+	this.remaining=60;
 }
 
 DoNothingLevel.prototype.mousemove = function(x, y)
 {
-	if(this.remaining<=55)
-	{
-		this.finished=true;
-	}
+	this.remaining=60;
 }
 
 DoNothingLevel.prototype.tick = function()

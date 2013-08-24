@@ -79,10 +79,6 @@ function tick()
 			{
 				timeleft+=90;
 			}
-			else
-			{
-				timeleft-=60;
-			}
 			currentlevel=newlevel();
 		}
 	}

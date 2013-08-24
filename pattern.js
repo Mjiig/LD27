@@ -49,6 +49,11 @@ PatternLevel.prototype.draw = function(ctx)
 			ctx.fill();
 		}
 	}
+
+	ctx.fillStyle="FFF";
+	ctx.font="normal 25pt Calibri";
+	ctx.TextAlign="start";
+	ctx.fillText("Press the buttons in this pattern:", 0, 550);
 }
 
 
@@ -65,11 +70,6 @@ PatternLevel.prototype.click = function(x, y)
 	{
 		this.pattern.shift();
 		console.log("shifting");
-	}
-	else
-	{
-		this.finished=true;
-		this.won=false;
 	}
 
 	if(this.pattern.length==0)
