@@ -27,8 +27,7 @@ CatchLevel.prototype.setspeed = function(i)
 
 CatchLevel.prototype.draw = function(ctx)
 {
-	ctx.fillStyle = "OFO";
-
+	ctx.fillStyle = "0F0";
 	for(var i=0; i<this.circlesX.length; i++)
 	{
 		var x=this.circlesX[i];
