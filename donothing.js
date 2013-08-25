@@ -7,9 +7,9 @@ function DoNothingLevel()
 
 DoNothingLevel.prototype.draw = function(ctx)
 {
-	ctx.fillStyle = "F00";
+	ctx.fillStyle = "#F00";
 	ctx.textAlign="center";
-	ctx.font="normal 85 Calibri";
+	ctx.font="normal 85px Calibri";
 	ctx.fillText("DON'T MOVE: " + Math.floor(this.remaining/10), 400, 350);
 }
 

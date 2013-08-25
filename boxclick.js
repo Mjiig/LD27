@@ -14,7 +14,7 @@ function BoxesLevel(difficulty)
 
 BoxesLevel.prototype.draw = function(ctx)
 {
-	ctx.fillStyle = "0F0";
+	ctx.fillStyle = "#0F0";
 	for(var i=0; i<this.boxesX.length; i++)
 	{
 		ctx.fillRect(this.boxesX[i], this.boxesY[i], 50, 50);

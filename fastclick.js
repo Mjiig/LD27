@@ -7,14 +7,14 @@ function FastClickLevel(difficulty)
 
 FastClickLevel.prototype.draw = function(ctx)
 {
-	ctx.fillStyle = "0F0";
+	ctx.fillStyle = "#0F0";
 	ctx.beginPath();
 	ctx.arc(400, 300, 5*this.clicks, 0, 2*Math.PI, false);
 	ctx.fill();
 
-	ctx.fillStyle="FFF";
+	ctx.fillStyle="#FFF";
 	ctx.textAlign="center";
-	ctx.font = "normal 50pt Calibri";
+	ctx.font = "normal 50px Calibri";
 	ctx.fillText("Click the circle", 400, 600);
 }
 

@@ -9,10 +9,8 @@ function CatchLevel(difficulty)
 	this.mousex=-1000000;
 	this.mousey=-1000000;
 
-	console.log("Creating level");
 	for(var i=0; i < 4+rand(difficulty/4); i++)
 	{
-		console.log("Creating ball");
 		this.circlesX.push(rand(750)+25);
 		this.circlesY.push(rand(550)+25);
 		this.setspeed(i);
@@ -27,7 +25,7 @@ CatchLevel.prototype.setspeed = function(i)
 
 CatchLevel.prototype.draw = function(ctx)
 {
-	ctx.fillStyle = "0F0";
+	ctx.fillStyle = "#0F0";
 	for(var i=0; i<this.circlesX.length; i++)
 	{
 		var x=this.circlesX[i];
@@ -37,9 +35,9 @@ CatchLevel.prototype.draw = function(ctx)
 		ctx.fill();
 	}
 
-	ctx.fillStyle="FFF";
+	ctx.fillStyle="#FFF";
 	ctx.textAlign="center";
-	ctx.font = "normal 50pt Calibri";
+	ctx.font = "normal 50px Calibri";
 	ctx.fillText("Catch the circles!", 400, 600);
 }
 
@@ -76,8 +74,6 @@ CatchLevel.prototype.tick = function()
 		var x = this.mousex;
 		var y = this.mousey;
 		 
-		console.log([cx, cy, x, y, cx-x, cy-y]);
-		console.log((cx-x)*(cx-x)+(cy-y)*(cy-y));
 
 		if((cx-x)*(cx-x)+(cy-y)*(cy-y) < 25*25)
 		{

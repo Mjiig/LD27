@@ -6,9 +6,9 @@ function ClickLevel(difficulty)
 }
 ClickLevel.prototype.draw = function(ctx)
 {
-	ctx.fillStyle = "0F0";
+	ctx.fillStyle = "#0F0";
 	ctx.textAlign="center";
-	ctx.font="normal 85 Calibri";
+	ctx.font="normal 60px Calibri";
 	ctx.fillText("CLICK NOW: " + Math.floor(this.remaining/10), 400, 350);
 }
 

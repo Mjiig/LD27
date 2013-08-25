@@ -27,14 +27,14 @@ function drawGame()
 	var ctx=c.getContext("2d");
 	
 	//Clear screen
-	ctx.fillStyle = "000";
+	ctx.fillStyle = "#000";
 	ctx.fillRect(0, 0, 800, 600);
 
 	if(timeleft>0)
 	{
 		ctx.textAlign="start";
-		ctx.fillStyle = "FFF";
-		ctx.font="normal 100pt Calibri";
+		ctx.fillStyle = "#FFF";
+		ctx.font="normal 100px Calibri";
 		ctx.fillText((timeleft/30).toFixed(1), 20, 120);
 	}
 
@@ -44,17 +44,17 @@ function drawGame()
 	}
 	else
 	{
-		ctx.fillStyle = "FFF";
+		ctx.fillStyle = "#FFF";
 		ctx.textAlign="center";
-		ctx.font="normal 50pt Calibri";
+		ctx.font="normal 50px Calibri";
 		ctx.fillText("Press Enter to Begin", 400, 300);
 	}
 
 	if(score>0 || highscore>0)
 	{
-		ctx.fillStyle = "FFF";
+		ctx.fillStyle = "#FFF";
 		ctx.textAlign="end";
-		ctx.font="normal 20pt Calibri";
+		ctx.font="normal 25px Calibri";
 		ctx.fillText("Score: " + score, 800, 30);
 		ctx.fillText("Highscore: " + highscore, 800, 60);
 	}
@@ -120,7 +120,6 @@ function handlekey(event)
 	}
 	if((k >= 37 && k <=40) || k==32)
 	{
-		console.log("hi");
 		event.preventDefault();
 	}
 }
