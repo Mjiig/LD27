@@ -37,7 +37,7 @@ CatchLevel.prototype.draw = function(ctx)
 
 	ctx.fillStyle="#FFF";
 	ctx.textAlign="center";
-	ctx.font = "normal 50px Calibri";
+	ctx.font = "normal 60px Calibri";
 	ctx.fillText("Catch the circles!", 400, 600);
 }
 

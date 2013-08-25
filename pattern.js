@@ -50,7 +50,7 @@ PatternLevel.prototype.draw = function(ctx)
 	}
 
 	ctx.fillStyle="#FFF";
-	ctx.font="normal 25px Calibri";
+	ctx.font="normal 40px  Calibri";
 	ctx.TextAlign="start";
 	ctx.fillText("Press the buttons in this pattern:", 0, 550);
 }

@@ -34,7 +34,7 @@ function drawGame()
 	{
 		ctx.textAlign="start";
 		ctx.fillStyle = "#FFF";
-		ctx.font="normal 100px Calibri";
+		ctx.font="normal 150px Calibri";
 		ctx.fillText((timeleft/30).toFixed(1), 20, 120);
 	}
 
@@ -46,7 +46,7 @@ function drawGame()
 	{
 		ctx.fillStyle = "#FFF";
 		ctx.textAlign="center";
-		ctx.font="normal 50px Calibri";
+		ctx.font="normal 75px Calibri";
 		ctx.fillText("Press Enter to Begin", 400, 300);
 	}
 
