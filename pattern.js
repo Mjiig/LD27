@@ -71,6 +71,10 @@ PatternLevel.prototype.click = function(x, y)
 		this.pattern.shift();
 		console.log("shifting");
 	}
+	else
+	{
+		this.pattern.push(rand(4));
+	}
 
 	if(this.pattern.length==0)
 	{
