@@ -18,7 +18,7 @@ function startGame()
 {
 	timeleft=30*10;
 	score=0;
-	currentlevel=new newlevel();
+	currentlevel=newlevel();
 }
 
 function drawGame()
