@@ -10,11 +10,14 @@ function setup()
 	setInterval(tick, 33);
 	currentlevel=null;
 
+	score=0;
+	highscore=0;
 }
 
 function startGame()
 {
 	timeleft=30*10;
+	score=0;
 	currentlevel=new newlevel();
 }
 
@@ -41,11 +44,20 @@ function drawGame()
 	else
 	{
 		ctx.fillStyle = "FFF";
-		var ctx = c.getContext("2d");
 		ctx.textAlign="center";
 		ctx.font="normal 50pt Calibri";
 		ctx.fillText("Press Enter to Begin", 400, 300);
 	}
+
+	if(score>0 || highscore>0)
+	{
+		ctx.fillStyle = "FFF";
+		ctx.textAlign="end";
+		ctx.font="normal 20pt Calibri";
+		ctx.fillText("Score: " + score, 800, 30);
+		ctx.fillText("Highscore: " + highscore, 800, 60);
+	}
+
 }
 
 function handleClick(event)
@@ -78,9 +90,15 @@ function tick()
 			if(currentlevel.won)
 			{
 				timeleft+=90;
+				score++;
 			}
 			currentlevel=newlevel();
 		}
+	}
+
+	if(score>highscore)
+	{
+		highscore=score;
 	}
 
 	drawGame();
