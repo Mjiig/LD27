@@ -1,9 +1,9 @@
-function PatternLevel()
+function PatternLevel(difficulty)
 {
 	this.finished=false;
 	this.won=false;
 	this.pattern=[];
-	var target=3+rand(5);
+	var target=3+rand(difficulty/3);
 
 	for(var i=0; i<target; i++)
 	{

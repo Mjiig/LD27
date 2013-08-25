@@ -1,8 +1,8 @@
-function FastClickLevel()
+function FastClickLevel(difficulty)
 {
 	this.finished=false;
 	this.won=false;
-	this.clicks=rand(10)+10;
+	this.clicks=rand(difficulty)+3;
 }
 
 FastClickLevel.prototype.draw = function(ctx)

@@ -1,8 +1,8 @@
-function ClickLevel()
+function ClickLevel(difficulty)
 {
 	this.finished=false;
 	this.won=false;
-	this.remaining=20;
+	this.remaining=30*Math.pow(0.95, difficulty/5);
 }
 ClickLevel.prototype.draw = function(ctx)
 {

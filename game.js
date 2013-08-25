@@ -141,7 +141,7 @@ function newlevel()
 
 	var level = levels[rand(levels.length)];
 
-	return new level();
+	return new level(score);
 }
 
 function cheat()

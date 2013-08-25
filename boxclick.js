@@ -1,11 +1,11 @@
-function BoxesLevel()
+function BoxesLevel(difficulty)
 {
 	this.finished=false;
 	this.won=false;
 	this.boxesX=[];
 	this.boxesY=[];
 
-	for(var i=0; i<4+rand(7); i++)
+	for(var i=0; i<4+rand(difficulty/4); i++)
 	{
 		this.boxesX.push(rand(750));
 		this.boxesY.push(rand(550));
