@@ -9,7 +9,6 @@ function PatternLevel()
 	{
 		this.pattern.push(rand(4));
 	}
-	console.log(this.pattern);
 }
 
 PatternLevel.prototype.draw = function(ctx)
@@ -59,17 +58,14 @@ PatternLevel.prototype.draw = function(ctx)
 
 PatternLevel.prototype.click = function(x, y)
 {
-	console.log(x + "  " + y);
 	if(y<250 || y>350)
 		return;
 
 	var clicked=Math.floor(x/200);
-	console.log(clicked)
 
 	if(this.pattern[0] == clicked)
 	{
 		this.pattern.shift();
-		console.log("shifting");
 	}
 	else
 	{

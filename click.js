@@ -16,7 +16,6 @@ ClickLevel.prototype.click = function(x, y)
 {
 	this.finished=true;
 	this.won=true;
-	console.log("win");
 }
 
 ClickLevel.prototype.keyboard = function(keycode)
