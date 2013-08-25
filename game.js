@@ -9,6 +9,7 @@ function setup()
 	timeleft=-1;
 	setInterval(tick, 33);
 	currentlevel=null;
+	lastlevel=-1;
 
 	score=0;
 	highscore=0;
@@ -139,7 +140,14 @@ function newlevel()
 {
 	var levels = [DoNothingLevel, BoxesLevel, FastClickLevel,ClickLevel, PatternLevel, CatchLevel];
 
-	var level = levels[rand(levels.length)];
+	var level = lastlevel;
+
+	while(level==lastlevel)
+	{
+		level = levels[rand(levels.length)];
+	}
+	
+	lastlevel=level;
 
 	return new level(score);
 }
