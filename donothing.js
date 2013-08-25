@@ -2,7 +2,7 @@ function DoNothingLevel()
 {
 	this.finished=false;
 	this.won=false;
-	this.remaining=60;
+	this.remaining=45;
 }
 
 DoNothingLevel.prototype.draw = function(ctx)
@@ -15,17 +15,17 @@ DoNothingLevel.prototype.draw = function(ctx)
 
 DoNothingLevel.prototype.click = function(x, y)
 {
-	this.remaining=60;
+	this.remaining=45;
 }
 
 DoNothingLevel.prototype.keyboard = function(keycode)
 {
-	this.remaining=60;
+	this.remaining=45;
 }
 
 DoNothingLevel.prototype.mousemove = function(x, y)
 {
-	this.remaining=60;
+	this.remaining=45;
 }
 
 DoNothingLevel.prototype.tick = function()

@@ -89,7 +89,7 @@ function tick()
 		{
 			if(currentlevel.won)
 			{
-				timeleft+=90;
+				timeleft+=60;
 				score++;
 			}
 			currentlevel=newlevel();
