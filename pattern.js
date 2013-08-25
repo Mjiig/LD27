@@ -39,12 +39,12 @@ PatternLevel.prototype.draw = function(ctx)
 		
 		if(this.pattern[i]%2==0)
 		{
-			ctx.fillRect(50*i, 550, 50, 50);
+			ctx.fillRect(52*i, 550, 50, 50);
 		}
 		else
 		{
 			ctx.beginPath();
-			ctx.arc(50*i+25, 575, 25,  0, 2*Math.PI, false);
+			ctx.arc(52*i+25, 575, 25,  0, 2*Math.PI, false);
 			ctx.fill();
 		}
 	}
